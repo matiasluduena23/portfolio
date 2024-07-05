@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets';
+import photo from '../assets/photo.png';
+---
+
+<main class="my-[4rem]">
+	<div class="container mx-auto">
+		<div class="flex flex-col items-center gap-6 text-center">
+			<div
+				class="flex items-center gap-4 px-4 py-2 border border-gray-400 w-fit rounded-3xl"
+			>
+				<div class="bg-clstrongGreen w-2 h-2 rounded-full"></div>
+				<p class="text-gray-100">Open to work</p>
+			</div>
+			<Image src={photo} alt={'profile picture'} width={60} />
+			<h1
+				class="text-3xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center mt-4"
+			>
+				<span>Building Websites</span>
+				<span>to automate processes</span>
+			</h1>
+			<p class="max-w-[300px] text-gray-400 flex flex-col">
+				<span>Designing and developing applications </span>
+				<span>to save time and resources</span>
+				<span>for clients worldwide.</span>
+			</p>
+
+			<buttonn
+				class="group relative inline-block overflow-hidden rounded border border-clbackground bg-black px-12 py-3 text-sm font-medium text-white focus:outline-none focus:ring active:bg-indigo-600 active:text-white cursor-pointer"
+			>
+				<span
+					class="ease absolute left-0 top-0 h-0 w-0 border-t-[1px] border-clstrongGreen transition-all duration-200 group-hover:w-full"
+				></span>
+				<span
+					class="ease absolute right-0 top-0 h-0 w-0 border-r-[1px] border-clstrongGreen transition-all duration-200 group-hover:h-full"
+				></span>
+				<span
+					class="ease absolute bottom-0 right-0 h-0 w-0 border-b-[1px] border-clstrongGreen transition-all duration-200 group-hover:w-full"
+				></span>
+				<span
+					class="ease absolute bottom-0 left-0 h-0 w-0 border-l-[1px] border-clstrongGreen transition-all duration-200 group-hover:h-full"
+				></span>
+				Meet me</buttonn
+			>
+		</div>
+	</div>
+</main>
