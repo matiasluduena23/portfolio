@@ -1,0 +1,207 @@
+---
+import { Image } from 'astro:assets';
+import photo from '../assets/photo.png';
+import css from '../assets/css.png';
+import js from '../assets/js.png';
+import sql from '../assets/sql.png';
+import typescript from '../assets/typescript.png';
+import react from '../assets/react.png';
+import tailwindcss from '../assets/tailwindcss.png';
+import nextjs from '../assets/nextjs.png';
+import astro from '../assets/astro.png';
+import playwright from '../assets/playwright.png';
+import docker from '../assets/docker.png';
+import figma from '../assets/figma.png';
+import notion from '../assets/notion.png';
+---
+
+<section id="about" class="py-[4rem]">
+	<h1
+		class="text-3xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center my-12 text-center"
+	>
+		About me
+	</h1>
+	<div class="container mx-auto max-w-[1100px]">
+		<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+			<div class="rounded-2xl md:col-start-1 md:col-end-9 relative p-8">
+				<div
+					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-2xl z-20"
+				>
+				</div>
+				<div class="flex flex-col gap-4 text-slate-100 text-xl z-30">
+					<p>I am Matias.</p>
+					<p>
+						A creative developer with passion for the automation and
+						AI implementations. From the concept to launch, I am
+						involved in every step of the process.
+					</p>
+					<p>
+						User experience, data model and save resourses are my
+						top priorities.
+					</p>
+				</div>
+			</div>
+			<div
+				class="rounded-lg md:col-start-9 md:col-end-13 relative p-8 flex items-center justify-center"
+			>
+				<div
+					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg z-20"
+				>
+				</div>
+
+				<Image
+					src={photo}
+					alt={'profile picture'}
+					width={100}
+					class="relative z-30"
+				/>
+			</div>
+			<div
+				class="rounded-lg md:col-start-1 md:col-end-4 relative p-8 flex items-center justify-center"
+			>
+				<div
+					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
+				>
+				</div>
+				<div class="text-center font-semibold">
+					<p class="text-slate-100 text-4xl">30+</p>
+					<p class="text-slate-200 text-2xl">Completed Projects</p>
+				</div>
+			</div>
+			<div
+				class="rounded-lg md:col-start-4 md:col-end-7 relative p-8 flex items-center justify-center"
+			>
+				<div
+					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
+				>
+				</div>
+				<div class="text-center font-semibold">
+					<p class="text-slate-100 text-4xl">2+</p>
+					<p class="text-slate-200 text-2xl">Freelancer years</p>
+				</div>
+			</div>
+			<div
+				class="rounded-lg md:col-start-7 md:col-end-13 relative p-8 flex items-center justify-center"
+			>
+				<div
+					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
+				>
+				</div>
+				<p class="text-white text-xl">
+					Helping Startups, B2B services, small businesses and
+					creatives with AI implementations, data analitycs, websdite
+					creation and payment process.
+				</p>
+			</div>
+			<div
+				class="rounded-lg md:col-start-1 md:col-end-5 relative p-8 flex flex-col gap-4 items-center justify-center"
+			>
+				<div
+					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
+				>
+				</div>
+				<h3 class="text-white text-xl">Languages</h3>
+				<div class="flex items-center gap-3">
+					<Image
+						src={js}
+						alt={'profile picture'}
+						width={50}
+						class="relative z-30"
+					/>
+					<Image
+						src={css}
+						alt={'profile picture'}
+						width={50}
+						class="relative z-30"
+					/>
+					<Image
+						src={typescript}
+						alt={'profile picture'}
+						width={46}
+						class="relative z-30"
+					/>
+
+					<Image
+						src={sql}
+						alt={'profile picture'}
+						width={50}
+						class="relative z-30"
+					/>
+				</div>
+			</div>
+			<div
+				class="rounded-lg col-start-5 col-end-9 relative p-8 flex flex-col gap-4 items-center justify-center"
+			>
+				<div
+					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
+				>
+				</div>
+				<h3 class="text-white text-xl">Frameworks & Library</h3>
+				<div class="flex items-center gap-5">
+					<Image
+						src={react}
+						alt={'profile picture'}
+						width={50}
+						class="relative z-30"
+					/>
+					<Image
+						src={tailwindcss}
+						alt={'profile picture'}
+						width={50}
+						class="relative z-30"
+					/>
+					<Image
+						src={astro}
+						alt={'profile picture'}
+						width={46}
+						class="relative z-30"
+					/>
+
+					<Image
+						src={nextjs}
+						alt={'profile picture'}
+						width={50}
+						class="relative z-30"
+					/>
+				</div>
+			</div>
+			<div
+				class="rounded-lg col-start-9 col-end-13 relative p-8 flex flex-col gap-4 items-center justify-center"
+			>
+				<div
+					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
+				>
+				</div>
+				<h3 class="text-white text-xl">Tools</h3>
+				<div class="flex items-center gap-5">
+					<Image
+						src={docker}
+						alt={'profile picture'}
+						width={55}
+						class="relative z-30"
+					/>
+					<Image
+						src={figma}
+						alt={'profile picture'}
+						width={40}
+						height={30}
+						class="relative z-30 w-[30px]"
+					/>
+					<Image
+						src={playwright}
+						alt={'profile picture'}
+						width={50}
+						class="relative z-30"
+					/>
+
+					<Image
+						src={notion}
+						alt={'profile picture'}
+						width={50}
+						class="relative z-30"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
