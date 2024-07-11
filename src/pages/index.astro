@@ -1,6 +1,8 @@
 ---
+import Experience from '../components/Experience.astro';
 import Header from '../components/Header.astro';
 import Main from '../components/Main.astro';
+import Projects from '../components/Projects.astro';
 import '../style/global.css';
 ---
 
@@ -16,10 +18,12 @@ import '../style/global.css';
 		/>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Matias Luduena Developer</title>
 	</head>
 	<body class="bg-clbackground font-inter">
 		<Header />
 		<Main />
+		<Experience />
+		<Projects />
 	</body>
 </html>
