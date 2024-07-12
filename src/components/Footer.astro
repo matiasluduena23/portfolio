@@ -9,12 +9,16 @@ import LinkedIn from '../assets/LinkedIn.astro';
 			class="h-[1px] w-full bg-gradient-to-r from-[#3C3C3C] from-10% via-cllightGray via-[percentage:20%_80%] to-[#3C3C3C] to-90%"
 		>
 		</div>
-		<div class="flex items-center justify-center gap-4">
-			<p class="text-slate-100">
+		<div
+			class="flex flex-col sm:flex-row items-center justify-center gap-4"
+		>
+			<p class="text-slate-100 text-center sm:text-start">
 				Interested in working with me ? Send me a message at
 			</p>
-			<buttonn
-				class="group relative inline-block overflow-hidden rounded border border-clbackground bg-black px-12 py-3 text-sm font-medium text-white focus:outline-none focus:ring active:bg-indigo-600 active:text-white cursor-pointer"
+			<a
+				href="https://www.linkedin.com/in/matias-luduena/"
+				target="_blank"
+				class="group relative inline-block overflow-hidden rounded border border-clbackground bg-black px-12 py-3 text-sm font-medium text-white focus:outline-none focus:ring active:bg-black active:text-clstrongGreen cursor-pointer"
 			>
 				<span
 					class="ease absolute left-0 top-0 h-0 w-0 border-t-[1px] border-clstrongGreen transition-all duration-200 group-hover:w-full"
@@ -28,7 +32,7 @@ import LinkedIn from '../assets/LinkedIn.astro';
 				<span
 					class="ease absolute bottom-0 left-0 h-0 w-0 border-l-[1px] border-clstrongGreen transition-all duration-200 group-hover:h-full"
 				></span>
-				LinkedIn</buttonn
+				LinkedIn</a
 			>
 		</div>
 		<div
@@ -46,11 +50,15 @@ import LinkedIn from '../assets/LinkedIn.astro';
 	</div>
 	<h1 class="font-kaisei text-white text-center text-3xl my-8">ML</h1>
 	<div class="flex justify-center items-center gap-4">
-		<a href="https://github.com/matiasluduena23" target="_blank"
-			><Github /></a
+		<a
+			href="https://github.com/matiasluduena23"
+			aria-label="github"
+			target="_blank"><Github /></a
 		>
-		<a href="https://www.linkedin.com/in/matias-luduena/" target="_blank"
-			><LinkedIn /></a
+		<a
+			href="https://www.linkedin.com/in/matias-luduena/"
+			aria-label="linkedIn"
+			target="_blank"><LinkedIn /></a
 		>
 	</div>
 </footer>

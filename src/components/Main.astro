@@ -12,7 +12,12 @@ import photo from '../assets/photo.png';
 				<div class="bg-clstrongGreen w-2 h-2 rounded-full"></div>
 				<p class="text-gray-100">Open to work</p>
 			</div>
-			<Image src={photo} alt={'profile picture'} width={60} />
+			<Image
+				src={photo}
+				alt="profile matias"
+				loading="eager"
+				width={60}
+			/>
 			<h1
 				class="text-3xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center mt-4"
 			>
@@ -25,8 +30,10 @@ import photo from '../assets/photo.png';
 				<span>for clients worldwide.</span>
 			</p>
 
-			<buttonn
-				class="group relative inline-block overflow-hidden rounded border border-clbackground bg-black px-12 py-3 text-sm font-medium text-white focus:outline-none focus:ring active:bg-indigo-600 active:text-white cursor-pointer"
+			<a
+				href="https://www.linkedin.com/in/matias-luduena/"
+				target="_blank"
+				class="group relative inline-block overflow-hidden rounded border border-clbackground bg-black px-12 py-3 text-sm font-medium text-white focus:outline-none focus:ring active:bg-black active:text-clstrongGreen cursor-pointer"
 			>
 				<span
 					class="ease absolute left-0 top-0 h-0 w-0 border-t-[1px] border-clstrongGreen transition-all duration-200 group-hover:w-full"
@@ -40,7 +47,7 @@ import photo from '../assets/photo.png';
 				<span
 					class="ease absolute bottom-0 left-0 h-0 w-0 border-l-[1px] border-clstrongGreen transition-all duration-200 group-hover:h-full"
 				></span>
-				Meet me</buttonn
+				Meet me</a
 			>
 		</div>
 	</div>
