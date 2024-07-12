@@ -1,0 +1,134 @@
+---
+import plus from '../assets/plus.svg';
+import { Image } from 'astro:assets';
+---
+
+<section id="services" class="py-[7rem]">
+	<h1
+		class="text-3xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center my-12 text-center"
+	>
+		Frequently Asked Questions
+	</h1>
+
+	<div class="container mx-auto space-y-4">
+		<article
+			class="bg-black text-slate-100 w-[400px] mx-auto border border-gray-400 rounded-md"
+		>
+			<button
+				class="btn-accordion flex items-center gap-3 py-2 pl-4 cursor-pointer border-b border-b-gray-700 w-full"
+				aria-expanded="false"
+			>
+				<Image src={plus} alt={'plus icon'} width={30} />
+				<span>What services do you offer ?</span>
+			</button>
+			<p class="hidden p-4">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+				atque, fuga sit nobis distinctio, id qui eligendi, nostrum
+				soluta sunt minima magnam quos tempora veniam!
+			</p>
+		</article>
+		<article
+			class="bg-black text-slate-100 w-[400px] mx-auto border border-gray-400 rounded-md"
+		>
+			<button
+				class="btn-accordion flex items-center gap-3 py-2 pl-4 cursor-pointer border-b border-b-gray-700 w-full"
+				aria-expanded="false"
+			>
+				<Image src={plus} alt={'plus icon'} width={30} />
+				<span>How much does a website cost?</span>
+			</button>
+			<p class="hidden p-4">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+				atque, fuga sit nobis distinctio, id qui eligendi, nostrum
+				soluta sunt minima magnam quos tempora veniam!
+			</p>
+		</article>
+		<article
+			class="bg-black text-slate-100 w-[400px] mx-auto border border-gray-400 rounded-md"
+		>
+			<button
+				class="btn-accordion flex items-center gap-3 py-2 pl-4 cursor-pointer border-b border-b-gray-700 w-full"
+				aria-expanded="false"
+			>
+				<Image src={plus} alt={'plus icon'} width={30} />
+				<span>What do you build your websites with?</span>
+			</button>
+			<p class="hidden p-4">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+				atque, fuga sit nobis distinctio, id qui eligendi, nostrum
+				soluta sunt minima magnam quos tempora veniam!
+			</p>
+		</article>
+		<article
+			class="bg-black text-slate-100 w-[400px] mx-auto border border-gray-400 rounded-md"
+		>
+			<button
+				class="btn-accordion flex items-center gap-3 py-2 pl-4 cursor-pointer border-b border-b-gray-700 w-full"
+				aria-expanded="false"
+			>
+				<Image src={plus} alt={'plus icon'} width={30} class="" />
+				<span>How long does a project take ?</span>
+			</button>
+			<p class="hidden p-4">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+				atque, fuga sit nobis distinctio, id qui eligendi, nostrum
+				soluta sunt minima magnam quos tempora veniam!
+			</p>
+		</article>
+		<article
+			class="bg-black text-slate-100 w-[400px] mx-auto border border-gray-400 rounded-md"
+		>
+			<button
+				class="btn-accordion flex items-center gap-3 py-2 pl-4 cursor-pointer border-b border-b-gray-700 w-full"
+				aria-expanded="false"
+			>
+				<div>
+					<Image src={plus} alt={'plus icon'} width={30} />
+				</div>
+				<span>What is the process for a project?</span>
+			</button>
+			<p class="hidden p-4">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+				atque, fuga sit nobis distinctio, id qui eligendi, nostrum
+				soluta sunt minima magnam quos tempora veniam!
+			</p>
+		</article>
+	</div>
+</section>
+<style>
+	.open-accordion {
+		display: block;
+	}
+</style>
+<script>
+	const btns = document.querySelectorAll('.btn-accordion')!;
+	btns.forEach((element) => {
+		const plusImage = element.firstElementChild!;
+
+		element.addEventListener('click', (e) => {
+			const isActive = element.getAttribute('aria-expanded')!;
+
+			if (plusImage instanceof HTMLElement) {
+				if (isActive === 'true') {
+					plusImage.animate([{ transform: 'rotate(90deg)' }], {
+						duration: 100,
+						fill: 'forwards',
+					});
+					element.setAttribute('aria-expanded', 'false');
+				} else {
+					plusImage.animate([{ transform: 'rotate(45deg)' }], {
+						duration: 100,
+						fill: 'forwards',
+					});
+					element.setAttribute('aria-expanded', 'true');
+				}
+			}
+
+			const paragraphElement = element.parentElement?.lastElementChild;
+
+			if (paragraphElement instanceof HTMLElement) {
+				paragraphElement.classList.toggle('open-accordion');
+			}
+		});
+	});
+</script>

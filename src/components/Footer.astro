@@ -1,0 +1,56 @@
+---
+import Github from '../assets/Github.astro';
+import LinkedIn from '../assets/LinkedIn.astro';
+---
+
+<footer class="my-[7rem]">
+	<div class="space-y-3">
+		<div
+			class="h-[1px] w-full bg-gradient-to-r from-[#3C3C3C] from-10% via-cllightGray via-[percentage:20%_80%] to-[#3C3C3C] to-90%"
+		>
+		</div>
+		<div class="flex items-center justify-center gap-4">
+			<p class="text-slate-100">
+				Interested in working with me ? Send me a message at
+			</p>
+			<buttonn
+				class="group relative inline-block overflow-hidden rounded border border-clbackground bg-black px-12 py-3 text-sm font-medium text-white focus:outline-none focus:ring active:bg-indigo-600 active:text-white cursor-pointer"
+			>
+				<span
+					class="ease absolute left-0 top-0 h-0 w-0 border-t-[1px] border-clstrongGreen transition-all duration-200 group-hover:w-full"
+				></span>
+				<span
+					class="ease absolute right-0 top-0 h-0 w-0 border-r-[1px] border-clstrongGreen transition-all duration-200 group-hover:h-full"
+				></span>
+				<span
+					class="ease absolute bottom-0 right-0 h-0 w-0 border-b-[1px] border-clstrongGreen transition-all duration-200 group-hover:w-full"
+				></span>
+				<span
+					class="ease absolute bottom-0 left-0 h-0 w-0 border-l-[1px] border-clstrongGreen transition-all duration-200 group-hover:h-full"
+				></span>
+				LinkedIn</buttonn
+			>
+		</div>
+		<div
+			class="h-[1px] w-full bg-gradient-to-r from-[#3C3C3C] from-10% via-cllightGray via-[percentage:20%_80%] to-[#3C3C3C] to-90%"
+		>
+		</div>
+	</div>
+	<div class="container mx-auto mt-12">
+		<ul class="flex items-center justify-center gap-4 text-cllightGray">
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+		</ul>
+	</div>
+	<h1 class="font-kaisei text-white text-center text-3xl my-8">ML</h1>
+	<div class="flex justify-center items-center gap-4">
+		<a href="https://github.com/matiasluduena23" target="_blank"
+			><Github /></a
+		>
+		<a href="https://www.linkedin.com/in/matias-luduena/" target="_blank"
+			><LinkedIn /></a
+		>
+	</div>
+</footer>
