@@ -7,7 +7,7 @@ import { Image } from 'astro:assets';
 	<h1
 		class="text-3xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center my-12 text-center"
 	>
-		Frequently Asked Questions
+		Preguntas frequentes
 	</h1>
 
 	<div class="container max-w-[95%] sm:w-full mx-auto space-y-4">
@@ -19,12 +19,10 @@ import { Image } from 'astro:assets';
 				aria-expanded="false"
 			>
 				<Image src={plus} alt={'plus icon'} width={30} />
-				<span>What services do you offer ?</span>
+				<span>¿Qué servicio ofrezco?</span>
 			</button>
 			<p class="hidden p-4">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-				atque, fuga sit nobis distinctio, id qui eligendi, nostrum
-				soluta sunt minima magnam quos tempora veniam!
+				Actualmente me encuentro desarrollando aplicaciones web y sistemas de automatización para empresas.
 			</p>
 		</article>
 		<article
@@ -35,12 +33,10 @@ import { Image } from 'astro:assets';
 				aria-expanded="false"
 			>
 				<Image src={plus} alt={'plus icon'} width={30} />
-				<span>How much does a website cost?</span>
+				<span>¿Cuánto cuesta una aplicación?</span>
 			</button>
 			<p class="hidden p-4">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-				atque, fuga sit nobis distinctio, id qui eligendi, nostrum
-				soluta sunt minima magnam quos tempora veniam!
+				El costo de una aplicación depende del tamaño y los requerimientos de la misma. Mi tarifa es U$15 la hora.
 			</p>
 		</article>
 		<article
@@ -51,12 +47,12 @@ import { Image } from 'astro:assets';
 				aria-expanded="false"
 			>
 				<Image src={plus} alt={'plus icon'} width={30} />
-				<span>What do you build your websites with?</span>
+				<span>¿Con que construyes tus aplicaciones? </span>
 			</button>
-			<p class="hidden p-4">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-				atque, fuga sit nobis distinctio, id qui eligendi, nostrum
-				soluta sunt minima magnam quos tempora veniam!
+			<div class="hidden p-4">
+				<p>La mayoría de las aplicaciones las desarrollo con NEXTJS que es un Metaframework que utiliza la librería de React. Como base de datos utilizo PostgresSQL.</p>
+				<p> Esto lo decido en base a los requerimientos de la aplicación. Puede que cambien el Stack dependiendo el sistema.</p>
+				
 			</p>
 		</article>
 		<article
@@ -67,12 +63,10 @@ import { Image } from 'astro:assets';
 				aria-expanded="false"
 			>
 				<Image src={plus} alt={'plus icon'} width={30} class="" />
-				<span>How long does a project take ?</span>
+				<span>¿Cuánto demora un proyecto?</span>
 			</button>
 			<p class="hidden p-4">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-				atque, fuga sit nobis distinctio, id qui eligendi, nostrum
-				soluta sunt minima magnam quos tempora veniam!
+				Esto depende mucho del tamaño del proyecto pero usualmente en proyectos medianos, el proceso tiene una duración de dos o tres semanas. 
 			</p>
 		</article>
 		<article
@@ -85,12 +79,24 @@ import { Image } from 'astro:assets';
 				<div>
 					<Image src={plus} alt={'plus icon'} width={30} />
 				</div>
-				<span>What is the process for a project?</span>
+				<span>¿Cuál es el proceso de un proyecto?</span>
 			</button>
-			<p class="hidden p-4">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-				atque, fuga sit nobis distinctio, id qui eligendi, nostrum
-				soluta sunt minima magnam quos tempora veniam!
+			<div class="hidden p-4">
+				<ol>
+					<li><strong>1. Entrevista:</strong> Me cuentas cuál es tu idea y te comento posibles opciones.</li>
+					<li><strong>2.	Presupuesto:</strong> Te envió un presupuesto con el precio y el tiempo estimado.</li>
+					<li><strong>3.	Comenzamos:</strong> Luego de solicitar el trabajo, me abonas el 30% del total del proyecto y comienzo con el desarrollo.</li>
+					<li> <strong>4.	Desarrollo:</strong> Elaboro un prototipo y te lo envió para que puedas verificar la aplicación y si es necesario realizar algún cambio.</li>
+					<li><strong>5.	Despliegue:</strong> realizo los test y el despliegue de la aplicación, me abonas el 70% restante de proyecto.</li>
+					<li><strong>6.	Seguimiento:</strong> realizamos un seguimiento por dos meses sin costo de la funcionalidad del sistema.</li>
+				</ol>
+					
+
+
+
+
+  
+
 			</p>
 		</article>
 	</div>

@@ -13,13 +13,14 @@ import playwright from '../assets/playwright.png';
 import docker from '../assets/docker.png';
 import figma from '../assets/figma.png';
 import notion from '../assets/notion.png';
+import University from '../assets/University.astro';
 ---
 
 <section id="about" class="py-[4rem]">
 	<h1
 		class="text-3xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center my-12 text-center"
 	>
-		About me
+		Acerca de mi
 	</h1>
 	<div class="container mx-auto w-[95%] max-w-[1100px]">
 		<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -28,16 +29,13 @@ import notion from '../assets/notion.png';
 					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-2xl z-20"
 				>
 				</div>
-				<div class="flex flex-col gap-4 text-slate-100 text-xl z-30">
-					<p>I am Matias.</p>
+				<div class="flex flex-col gap-4 text-gray-200 text-xl z-30">
+					<p>Hola! Mi nombre es Matías.</p>
 					<p>
-						A creative developer with passion for the automation and
-						AI implementations. From the concept to launch, I am
-						involved in every step of the process.
+						Soy  un desarrollador con más de 10 años de experiencia en el campo de la informática. He trabajado en diferentes roles y en muy diversos proyectos, lo que me ayudo a formarme como profesional en el sector IT. 
 					</p>
 					<p>
-						User experience, data model and save resourses are my
-						top priorities.
+						Estoy actualizándome constantemente con las novedades tecnológicas para mejorar mis habilidades y ofrecer soluciones innovadoras y de alta calidad que se adapten a las necesidades cambiantes del mercado.
 					</p>
 				</div>
 			</div>
@@ -52,7 +50,7 @@ import notion from '../assets/notion.png';
 				<Image
 					src={photo}
 					alt={'profile  matias'}
-					loading={'eager'}
+					loading={'lazy'}
 					width={100}
 					class="relative z-30"
 				/>
@@ -65,8 +63,8 @@ import notion from '../assets/notion.png';
 				>
 				</div>
 				<div class="text-center font-semibold">
-					<p class="text-slate-100 text-4xl">30+</p>
-					<p class="text-slate-200 text-2xl">Completed Projects</p>
+					<p class="text-gray-100 text-4xl">30+</p>
+					<p class="text-gray-200 text-2xl">Completed Projects</p>
 				</div>
 			</div>
 			<div
@@ -76,9 +74,10 @@ import notion from '../assets/notion.png';
 					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
 				>
 				</div>
-				<div class="text-center font-semibold">
-					<p class="text-slate-100 text-4xl">2+</p>
-					<p class="text-slate-200 text-2xl">Freelancer years</p>
+				<div class="text-center text-xl  flex items-center flex-col">
+					<University />
+					<p class="text-gray-200">Técnico Superior en Programación - UTN</p>
+					<p class="text-gray-200">Inglés B2 - Facultad de Lenguas</p>
 				</div>
 			</div>
 			<div
@@ -88,10 +87,8 @@ import notion from '../assets/notion.png';
 					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
 				>
 				</div>
-				<p class="text-white text-xl">
-					Helping Startups, B2B services, small businesses and
-					creatives with AI implementations, data analitycs, websdite
-					creation and payment process.
+				<p class="text-gray-200 text-xl">
+					Ayudo a clientes y empresas con implementaciones de inteligencia artificial, análisis de datos, creación de sitios web y procesos de pago
 				</p>
 			</div>
 			<div
@@ -108,21 +105,21 @@ import notion from '../assets/notion.png';
 						alt={'js logo'}
 						width={50}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 					<Image
 						src={css}
 						alt={'css logo'}
 						width={50}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 					<Image
 						src={typescript}
 						alt={'typescript logo'}
 						width={46}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 
 					<Image
@@ -130,7 +127,7 @@ import notion from '../assets/notion.png';
 						alt={'sql logo'}
 						width={50}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 				</div>
 			</div>
@@ -148,21 +145,21 @@ import notion from '../assets/notion.png';
 						alt={'react logo'}
 						width={50}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 					<Image
 						src={tailwindcss}
 						alt={'tailwind logo'}
 						width={50}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 					<Image
 						src={astro}
 						alt={'astro logo'}
 						width={46}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 
 					<Image
@@ -170,7 +167,7 @@ import notion from '../assets/notion.png';
 						alt={'nextjs logo'}
 						width={50}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 				</div>
 			</div>
@@ -188,7 +185,7 @@ import notion from '../assets/notion.png';
 						alt={'docker logo'}
 						width={55}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 					<Image
 						src={figma}
@@ -196,14 +193,14 @@ import notion from '../assets/notion.png';
 						width={40}
 						height={30}
 						class="relative z-30 w-[30px]"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 					<Image
 						src={playwright}
 						alt={'playwright logo'}
 						width={50}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 
 					<Image
@@ -211,7 +208,7 @@ import notion from '../assets/notion.png';
 						alt={'notion logo'}
 						width={50}
 						class="relative z-30"
-						loading={'eager'}
+						loading={'lazy'}
 					/>
 				</div>
 			</div>
