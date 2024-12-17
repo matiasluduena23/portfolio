@@ -1,6 +1,7 @@
 ---
 import Github from "../assets/Github.astro";
 import LinkedIn from "../assets/LinkedIn.astro";
+import NavLinks from "./NavLinks.astro";
 ---
 
 <footer class="my-[7rem]">
@@ -38,39 +39,8 @@ import LinkedIn from "../assets/LinkedIn.astro";
 		>
 		</div>
 	</div>
-	<div class="container mx-auto mt-12">
-		<nav>
-			<ul class="flex items-center justify-center gap-2 text-clGray">
-				<li>
-					<a
-						href="#experience"
-						class="relative after:bg-clstrongGreen after:absolute after:h-[1px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
-						>Experiencia</a
-					>
-				</li>
-				<li>
-					<a
-						href="#projects"
-						class="relative after:bg-clstrongGreen after:absolute after:h-[1px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
-						>Proyectos</a
-					>
-				</li>
-				<li>
-					<a
-						href="#services"
-						class="relative after:bg-clstrongGreen after:absolute after:h-[1px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
-						>Servicios</a
-					>
-				</li>
-				<li>
-					<a
-						href="#about"
-						class="relative after:bg-clstrongGreen after:absolute after:h-[1px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
-						>Acerca de</a
-					>
-				</li>
-			</ul>
-		</nav>
+	<div class="container mx-auto mt-12 hidden md:block">
+		<NavLinks classes="text-clGray justify-center" />
 	</div>
 	<h1 class="font-basker text-white text-center text-3xl my-8">ML</h1>
 	<div class="flex justify-center items-center gap-4">

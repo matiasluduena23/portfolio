@@ -6,38 +6,37 @@ import { Image } from "astro:assets";
 ---
 
 <div class="container mx-auto">
-	<div class="flex items-center justify-between">
-		<div class="flex items-center gap-2">
-			<p class="text-white uppercase font-kaisei text-[45px] font-bold">ML</p>
-			<div class="flex-col font-semibold hidden sm:block">
-				<p class="text-gray-300 mt-1 tracking-wider">Matias Ludueña</p>
-				<p class="text-gray-400">Front-end Developer</p>
+	<div class="flex items-center justify-between relative">
+		<div class="flex items-center justify-center gap-2">
+			<p class="text-white uppercase font-basker text-[45px] font-bold">ML</p>
+			<div class="flex flex-col font-semibold leading-tight">
+				<p class="text-gray-300 tracking-wider">Matias Ludueña</p>
+				<p class="text-clGray">Programador</p>
 			</div>
 		</div>
 		<button
-			class="rounded-full flex items-center justify-center font-semibold z-50"
+			class="absolute left-1/2 transform -translate-x-1/2 rounded-full flex items-center justify-center z-50"
 			id="btn-desktop-language"
 		>
-			<Image src={globe} alt="globe" width="31" height="31" />
+			<Image src={globe} alt="globe" width="31" height="31" class="globe" />
 
-			<div
-				class="relative no-show popup-language"
-				id="popup-language"
-				aria-expanded="false"
-			>
+			<div class="relative no-show popup-language" aria-expanded="false">
 				<div
 					class:list={[
 						"absolute flex items-center flex-col bg-white rounded-lg",
 						position,
 					]}
 				>
-					<span
+					<a
+						href="/"
 						class="hover:bg-gray-200 inline-block px-2 py-1 overflow-hidden rounded-t-lg w-full"
-						><a href="/">ES</a></span
+						>ES</a
 					>
-					<span
+
+					<a
+						href="/en/"
 						class="hover:bg-gray-200 inline-block px-2 py-1 w-full overflow-hidden rounded-b-lg"
-						><a href="/en/">EN</a></span
+						>EN</a
 					>
 				</div>
 			</div>

@@ -3,7 +3,12 @@ const { classes } = Astro.props;
 ---
 
 <nav>
-	<ul class:list={["flex flex-wrap items-center  gap-2 text-clGray", classes]}>
+	<ul
+		class:list={[
+			"flex flex-wrap items-center  gap-2 lg:gap-12 text-clGray",
+			classes,
+		]}
+	>
 		<li>
 			<a
 				href="#experience"
