@@ -1,0 +1,46 @@
+---
+import Globe from "../assets/Globe.astro";
+const { position } = Astro.props;
+---
+
+<button
+	class="rounded-full bg-white flex items-center justify-center font-semibold z-50"
+	id="btn-language"
+>
+	<Globe />
+	<div class="relative no-show" id="popup-language" aria-expanded="false">
+		<div
+			class:list={[
+				"absolute flex items-center flex-col bg-white rounded-lg",
+				position,
+			]}
+		>
+			<span
+				class="hover:bg-gray-200 inline-block px-2 py-1 overflow-hidden rounded-t-lg w-full"
+				id="btn-es"><a href="/">ES</a></span
+			>
+			<span
+				id="btn-en"
+				class="hover:bg-gray-200 inline-block px-2 py-1 w-full overflow-hidden rounded-b-lg"
+				><a href="/en/">EN</a></span
+			>
+		</div>
+	</div>
+</button>
+
+<script>
+	const btnLanguage = document.getElementById("btn-language");
+
+	btnLanguage?.addEventListener("click", () => {
+		const popup = document.getElementById("popup-language");
+		if (!popup) return;
+		const attrExpanded = popup?.getAttribute("aria-expanded");
+		if (!attrExpanded) return;
+		popup?.setAttribute(
+			"aria-expanded",
+			(!(attrExpanded === "true")).toString()
+		);
+
+		popup.classList.toggle("show");
+	});
+</script>
