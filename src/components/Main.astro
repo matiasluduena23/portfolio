@@ -1,6 +1,6 @@
 ---
-import { Image } from 'astro:assets';
-import photo from '../assets/photo.png';
+import { Image } from "astro:assets";
+import photo from "../assets/photo.png";
 ---
 
 <main class="my-[7rem]">
@@ -10,14 +10,9 @@ import photo from '../assets/photo.png';
 				class="flex items-center gap-4 px-4 py-2 border border-gray-400 w-fit rounded-3xl"
 			>
 				<div class="bg-clstrongGreen w-2 h-2 rounded-full"></div>
-				<p class="text-gray-100">Open to work</p>
+				<p class="text-gray-100">Incorporación inmediata</p>
 			</div>
-			<Image
-				src={photo}
-				alt="profile matias"
-				loading="eager"
-				width={60}
-			/>
+			<Image src={photo} alt="profile matias" loading="eager" width={60} />
 			<h1
 				class="text-3xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center mt-4"
 			>
@@ -25,7 +20,7 @@ import photo from '../assets/photo.png';
 				<span>para automatizar procesos</span>
 			</h1>
 			<p class="max-w-[300px] text-clGray flex flex-col">
-				<span>Diseñando y desarrollando aplicaciones  </span>
+				<span>Diseñando y desarrollando aplicaciones </span>
 				<span>con el fin de optimizar tiempo y recursos </span>
 				<span>para clientes alrededor del mundo.</span>
 			</p>
@@ -33,7 +28,7 @@ import photo from '../assets/photo.png';
 			<a
 				href="https://www.linkedin.com/in/matias-luduena/"
 				target="_blank"
-				class="group relative inline-block overflow-hidden rounded border border-clbackground bg-black px-12 py-3 text-md  font-semibold tracking-wide text-white focus:outline-none focus:ring active:bg-black active:text-clstrongGreen cursor-pointer"
+				class="group relative inline-block overflow-hidden rounded border border-clbackground bg-black px-12 py-3 text-md font-semibold tracking-wide text-white focus:outline-none focus:ring active:bg-black active:text-clstrongGreen cursor-pointer"
 			>
 				<span
 					class="ease absolute left-0 top-0 h-0 w-0 border-t-[1px] border-clstrongGreen transition-all duration-200 group-hover:w-full"
