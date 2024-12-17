@@ -1,5 +1,5 @@
 ---
-import Globe from "../assets/Globe.astro";
+import NavigationDesktop from "./NavigationDesktop.astro";
 import NavigationMobile from "./NavigationMobile.astro";
 ---
 
@@ -12,6 +12,9 @@ import NavigationMobile from "./NavigationMobile.astro";
 				<p class="text-clGray">Programador</p>
 			</div>
 		</div>
-		<NavigationMobile />
+		<NavigationMobile position="top-popup" />
+	</div>
+	<div class="hidden md:block">
+		<NavigationDesktop position="botton-popup" />
 	</div>
 </header>
