@@ -1,9 +1,9 @@
 ---
-import plus from '../assets/plus.svg';
-import { Image } from 'astro:assets';
+import plus from "../assets/plus.svg";
+import { Image } from "astro:assets";
 ---
 
-<section id="services" class="py-[7rem]">
+<section id="services" class="pt-4">
 	<h1
 		class="text-3xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center my-12 text-center"
 	>
@@ -18,12 +18,15 @@ import { Image } from 'astro:assets';
 				class="btn-accordion flex items-center gap-3 py-2 pl-4 cursor-pointer border-b border-b-gray-700 w-full"
 				aria-expanded="false"
 			>
-				<Image src={plus} alt={'plus icon'} width={30} />
+				<Image src={plus} alt={"plus icon"} width={30} />
 				<span>¿Qué servicio ofrezco?</span>
 			</button>
-			<p class="hidden p-4">
-				Actualmente me encuentro desarrollando aplicaciones web y sistemas de automatización para empresas.
-			</p>
+			<div class="h-0 opacity-0 overflow-hidden transition-all">
+				<p class="p-4">
+					Actualmente me encuentro desarrollando aplicaciones web y sistemas de
+					automatización para empresas.
+				</p>
+			</div>
 		</article>
 		<article
 			class="bg-black text-slate-100 max-w-[400px] mx-auto border border-gray-400 rounded-md"
@@ -32,12 +35,15 @@ import { Image } from 'astro:assets';
 				class="btn-accordion flex items-center gap-3 py-2 pl-4 cursor-pointer border-b border-b-gray-700 w-full"
 				aria-expanded="false"
 			>
-				<Image src={plus} alt={'plus icon'} width={30} />
+				<Image src={plus} alt={"plus icon"} width={30} />
 				<span>¿Cuánto cuesta una aplicación?</span>
 			</button>
-			<p class="hidden p-4">
-				El costo de una aplicación depende del tamaño y los requerimientos de la misma. Mi tarifa es U$15 la hora.
-			</p>
+			<div class="h-0 opacity-0 overflow-hidden transition-all">
+				<p class="p-4">
+					El costo de una aplicación depende del tamaño y los requerimientos de
+					la misma. Mi tarifa es U$15 la hora.
+				</p>
+			</div>
 		</article>
 		<article
 			class="bg-black text-slate-100 max-w-[400px] mx-auto border border-gray-400 rounded-md"
@@ -46,14 +52,22 @@ import { Image } from 'astro:assets';
 				class="btn-accordion flex items-center gap-3 py-2 pl-4 cursor-pointer border-b border-b-gray-700 w-full"
 				aria-expanded="false"
 			>
-				<Image src={plus} alt={'plus icon'} width={30} />
+				<Image src={plus} alt={"plus icon"} width={30} />
 				<span>¿Con que construyes tus aplicaciones? </span>
 			</button>
-			<div class="hidden p-4">
-				<p>La mayoría de las aplicaciones las desarrollo con NEXTJS que es un Metaframework que utiliza la librería de React. Como base de datos utilizo PostgresSQL.</p>
-				<p> Esto lo decido en base a los requerimientos de la aplicación. Puede que cambien el Stack dependiendo el sistema.</p>
-				
-			</p>
+			<div class="h-0 opacity-0 overflow-hidden transition-all">
+				<div class="p-4">
+					<p>
+						La mayoría de las aplicaciones las desarrollo con NEXTJS que es un
+						Metaframework que utiliza la librería de React. Como base de datos
+						utilizo PostgresSQL.
+					</p>
+					<p>
+						Esto lo decido en base a los requerimientos de la aplicación. Puede
+						que cambien el Stack dependiendo el sistema.
+					</p>
+				</div>
+			</div>
 		</article>
 		<article
 			class="bg-black text-slate-100 max-w-[400px] mx-auto border border-gray-400 rounded-md"
@@ -62,12 +76,16 @@ import { Image } from 'astro:assets';
 				class="btn-accordion flex items-center gap-3 py-2 pl-4 cursor-pointer border-b border-b-gray-700 w-full"
 				aria-expanded="false"
 			>
-				<Image src={plus} alt={'plus icon'} width={30} class="" />
+				<Image src={plus} alt={"plus icon"} width={30} class="" />
 				<span>¿Cuánto demora un proyecto?</span>
 			</button>
-			<p class="hidden p-4">
-				Esto depende mucho del tamaño del proyecto pero usualmente en proyectos medianos, el proceso tiene una duración de dos o tres semanas. 
-			</p>
+			<div class="h-0 opacity-0 overflow-hidden transition-all">
+				<p class="p-4">
+					Esto depende mucho del tamaño del proyecto pero usualmente en
+					proyectos medianos, el proceso tiene una duración de dos o tres
+					semanas.
+				</p>
+			</div>
 		</article>
 		<article
 			class="bg-black text-slate-100 max-w-[400px] mx-auto border border-gray-400 rounded-md"
@@ -77,63 +95,75 @@ import { Image } from 'astro:assets';
 				aria-expanded="false"
 			>
 				<div>
-					<Image src={plus} alt={'plus icon'} width={30} />
+					<Image src={plus} alt={"plus icon"} width={30} />
 				</div>
 				<span>¿Cuál es el proceso de un proyecto?</span>
 			</button>
-			<div class="hidden p-4">
-				<ol>
-					<li><strong>1. Entrevista:</strong> Me cuentas cuál es tu idea y te comento posibles opciones.</li>
-					<li><strong>2.	Presupuesto:</strong> Te envió un presupuesto con el precio y el tiempo estimado.</li>
-					<li><strong>3.	Comenzamos:</strong> Luego de solicitar el trabajo, me abonas el 30% del total del proyecto y comienzo con el desarrollo.</li>
-					<li> <strong>4.	Desarrollo:</strong> Elaboro un prototipo y te lo envió para que puedas verificar la aplicación y si es necesario realizar algún cambio.</li>
-					<li><strong>5.	Despliegue:</strong> realizo los test y el despliegue de la aplicación, me abonas el 70% restante de proyecto.</li>
-					<li><strong>6.	Seguimiento:</strong> realizamos un seguimiento por dos meses sin costo de la funcionalidad del sistema.</li>
+			<div class="h-0 opacity-0 overflow-hidden transition-all">
+				<ol class="p-4">
+					<li>
+						<strong>1. Entrevista:</strong> Me cuentas cuál es tu idea y te comento
+						posibles opciones.
+					</li>
+					<li>
+						<strong>2. Presupuesto:</strong> Te envió un presupuesto con el precio
+						y el tiempo estimado.
+					</li>
+					<li>
+						<strong>3. Comenzamos:</strong> Luego de solicitar el trabajo, me abonas
+						el 30% del total del proyecto y comienzo con el desarrollo.
+					</li>
+					<li>
+						<strong>4. Desarrollo:</strong> Elaboro un prototipo y te lo envió para
+						que puedas verificar la aplicación y si es necesario realizar algún cambio.
+					</li>
+					<li>
+						<strong>5. Despliegue:</strong> realizo los test y el despliegue de la
+						aplicación, me abonas el 70% restante de proyecto.
+					</li>
+					<li>
+						<strong>6. Seguimiento:</strong> realizamos un seguimiento por dos meses
+						sin costo de la funcionalidad del sistema.
+					</li>
 				</ol>
-					
-
-
-
-
-  
-
-			</p>
+			</div>
 		</article>
 	</div>
 </section>
 <style>
 	.open-accordion {
-		display: block;
+		height: 100%;
+		opacity: 1;
 	}
 </style>
 <script>
-	const btns = document.querySelectorAll('.btn-accordion')!;
+	const btns = document.querySelectorAll(".btn-accordion")!;
 	btns.forEach((element) => {
 		const plusImage = element.firstElementChild!;
 
-		element.addEventListener('click', (e) => {
-			const isActive = element.getAttribute('aria-expanded')!;
+		element.addEventListener("click", (e) => {
+			const isActive = element.getAttribute("aria-expanded")!;
 
 			if (plusImage instanceof HTMLElement) {
-				if (isActive === 'true') {
-					plusImage.animate([{ transform: 'rotate(90deg)' }], {
+				if (isActive === "true") {
+					plusImage.animate([{ transform: "rotate(90deg)" }], {
 						duration: 100,
-						fill: 'forwards',
+						fill: "forwards",
 					});
-					element.setAttribute('aria-expanded', 'false');
+					element.setAttribute("aria-expanded", "false");
 				} else {
-					plusImage.animate([{ transform: 'rotate(45deg)' }], {
+					plusImage.animate([{ transform: "rotate(45deg)" }], {
 						duration: 100,
-						fill: 'forwards',
+						fill: "forwards",
 					});
-					element.setAttribute('aria-expanded', 'true');
+					element.setAttribute("aria-expanded", "true");
 				}
 			}
 
 			const paragraphElement = element.parentElement?.lastElementChild;
 
 			if (paragraphElement instanceof HTMLElement) {
-				paragraphElement.classList.toggle('open-accordion');
+				paragraphElement.classList.toggle("open-accordion");
 			}
 		});
 	});

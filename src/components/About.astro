@@ -1,22 +1,22 @@
 ---
-import { Image } from 'astro:assets';
-import photo from '../assets/photo.png';
-import css from '../assets/css.png';
-import js from '../assets/js.png';
-import sql from '../assets/sql.png';
-import typescript from '../assets/typescript.png';
-import react from '../assets/react.png';
-import tailwindcss from '../assets/tailwindcss.png';
-import nextjs from '../assets/nextjs.png';
-import astro from '../assets/astro.png';
-import playwright from '../assets/playwright.png';
-import docker from '../assets/docker.png';
-import figma from '../assets/figma.png';
-import notion from '../assets/notion.png';
-import University from '../assets/University.astro';
+import { Image } from "astro:assets";
+import photo from "../assets/photo.png";
+import css from "../assets/css.png";
+import js from "../assets/js.png";
+import sql from "../assets/sql.png";
+import typescript from "../assets/typescript.png";
+import react from "../assets/react.png";
+import tailwindcss from "../assets/tailwindcss.png";
+import nextjs from "../assets/nextjs.png";
+import astro from "../assets/astro.png";
+import playwright from "../assets/playwright.png";
+import docker from "../assets/docker.png";
+import figma from "../assets/figma.png";
+import notion from "../assets/notion.png";
+import University from "../assets/University.astro";
 ---
 
-<section id="about" class="py-[4rem]">
+<section id="about" class="pt-4">
 	<h1
 		class="text-3xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center my-12 text-center"
 	>
@@ -32,10 +32,16 @@ import University from '../assets/University.astro';
 				<div class="flex flex-col gap-4 text-gray-200 text-xl z-30">
 					<p>Hola! Mi nombre es Matías.</p>
 					<p>
-						Soy  un desarrollador con más de 10 años de experiencia en el campo de la informática. He trabajado en diferentes roles y en muy diversos proyectos, lo que me ayudo a formarme como profesional en el sector IT. 
+						Soy un desarrollador con más de 10 años de experiencia en el campo
+						de la informática. He trabajado en diferentes roles y en muy
+						diversos proyectos, lo que me ayudo a formarme como profesional en
+						el sector IT.
 					</p>
 					<p>
-						Estoy actualizándome constantemente con las novedades tecnológicas para mejorar mis habilidades y ofrecer soluciones innovadoras y de alta calidad que se adapten a las necesidades cambiantes del mercado.
+						Estoy actualizándome constantemente con las novedades tecnológicas
+						para mejorar mis habilidades y ofrecer soluciones innovadoras y de
+						alta calidad que se adapten a las necesidades cambiantes del
+						mercado.
 					</p>
 				</div>
 			</div>
@@ -49,8 +55,8 @@ import University from '../assets/University.astro';
 
 				<Image
 					src={photo}
-					alt={'profile  matias'}
-					loading={'lazy'}
+					alt={"profile  matias"}
+					loading={"lazy"}
 					width={100}
 					class="relative z-30"
 				/>
@@ -58,9 +64,7 @@ import University from '../assets/University.astro';
 			<div
 				class="rounded-lg md:col-start-1 md:col-end-4 relative p-8 flex items-center justify-center"
 			>
-				<div
-					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
-				>
+				<div class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg">
 				</div>
 				<div class="text-center font-semibold">
 					<p class="text-gray-100 text-4xl">30+</p>
@@ -70,11 +74,9 @@ import University from '../assets/University.astro';
 			<div
 				class="rounded-lg md:col-start-4 md:col-end-7 relative p-8 flex items-center justify-center"
 			>
-				<div
-					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
-				>
+				<div class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg">
 				</div>
-				<div class="text-center text-xl  flex items-center flex-col">
+				<div class="text-center text-xl flex items-center flex-col">
 					<University />
 					<p class="text-gray-200">Técnico Superior en Programación - UTN</p>
 					<p class="text-gray-200">Inglés B2 - Facultad de Lenguas</p>
@@ -83,132 +85,126 @@ import University from '../assets/University.astro';
 			<div
 				class="rounded-lg md:col-start-7 md:col-end-13 relative p-8 flex items-center justify-center"
 			>
-				<div
-					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
-				>
+				<div class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg">
 				</div>
 				<p class="text-gray-200 text-xl">
-					Ayudo a clientes y empresas con implementaciones de inteligencia artificial, análisis de datos, creación de sitios web y procesos de pago
+					Ayudo a clientes y empresas con implementaciones de inteligencia
+					artificial, análisis de datos, creación de sitios web y procesos de
+					pago
 				</p>
 			</div>
 			<div
 				class="rounded-lg md:col-start-1 md:col-end-5 relative p-8 flex flex-col gap-4 items-center justify-center"
 			>
-				<div
-					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
-				>
+				<div class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg">
 				</div>
 				<h3 class="text-white text-xl">Languages</h3>
 				<div class="flex items-center gap-3">
 					<Image
 						src={js}
-						alt={'js logo'}
+						alt={"js logo"}
 						width={50}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 					<Image
 						src={css}
-						alt={'css logo'}
+						alt={"css logo"}
 						width={50}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 					<Image
 						src={typescript}
-						alt={'typescript logo'}
+						alt={"typescript logo"}
 						width={46}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 
 					<Image
 						src={sql}
-						alt={'sql logo'}
+						alt={"sql logo"}
 						width={50}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 				</div>
 			</div>
 			<div
 				class="rounded-lg md:col-start-5 md:col-end-9 relative p-8 flex flex-col gap-4 items-center justify-center"
 			>
-				<div
-					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
-				>
+				<div class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg">
 				</div>
 				<h3 class="text-white text-xl">Frameworks & Library</h3>
 				<div class="flex items-center gap-5">
 					<Image
 						src={react}
-						alt={'react logo'}
+						alt={"react logo"}
 						width={50}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 					<Image
 						src={tailwindcss}
-						alt={'tailwind logo'}
+						alt={"tailwind logo"}
 						width={50}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 					<Image
 						src={astro}
-						alt={'astro logo'}
+						alt={"astro logo"}
 						width={46}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 
 					<Image
 						src={nextjs}
-						alt={'nextjs logo'}
+						alt={"nextjs logo"}
 						width={50}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 				</div>
 			</div>
 			<div
 				class="rounded-lg md:col-start-9 md:col-end-13 relative p-8 flex flex-col gap-4 items-center justify-center"
 			>
-				<div
-					class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg"
-				>
+				<div class="absolute inset-0 bg-[url('/bg.png')] opacity-5 rounded-lg">
 				</div>
 				<h3 class="text-white text-xl">Tools</h3>
 				<div class="flex items-center gap-5">
 					<Image
 						src={docker}
-						alt={'docker logo'}
+						alt={"docker logo"}
 						width={55}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 					<Image
 						src={figma}
-						alt={'figma logo'}
+						alt={"figma logo"}
 						width={40}
 						height={30}
 						class="relative z-30 w-[30px]"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 					<Image
 						src={playwright}
-						alt={'playwright logo'}
+						alt={"playwright logo"}
 						width={50}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 
 					<Image
 						src={notion}
-						alt={'notion logo'}
+						alt={"notion logo"}
 						width={50}
 						class="relative z-30"
-						loading={'lazy'}
+						loading={"lazy"}
 					/>
 				</div>
 			</div>
