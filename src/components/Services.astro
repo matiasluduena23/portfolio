@@ -141,7 +141,7 @@ import { Image } from "astro:assets";
 	btns.forEach((element) => {
 		const plusImage = element.firstElementChild!;
 
-		element.addEventListener("click", (e) => {
+		element.addEventListener("click", () => {
 			const isActive = element.getAttribute("aria-expanded")!;
 
 			if (plusImage instanceof HTMLElement) {

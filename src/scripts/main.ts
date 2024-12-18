@@ -1,4 +1,4 @@
-export function showPopUp(this: any, e: MouseEvent) {
+export function showPopUp(this: any) {
 	const popup = this.querySelector(".popup-language");
 	if (!popup) return;
 
