@@ -3,23 +3,25 @@ import { Image } from "astro:assets";
 import photo from "../assets/photo.png";
 ---
 
-<main class="my-[7rem] pb-8]">
+<main class="my-[7rem] pb-8 md:pb-0">
 	<div class="container mx-auto max-w-[1100px]">
 		<div class="flex flex-col items-center gap-6 text-center">
 			<div
-				class="flex items-center gap-4 px-4 py-2 border border-gray-400 w-fit rounded-3xl"
+				class="flex items-center gap-4 px-4 py-2 border border-gray-400 w-fit rounded-3xl md:mb-8"
 			>
 				<div class="bg-clstrongGreen w-2 h-2 rounded-full"></div>
 				<p class="text-gray-100">Incorporación inmediata</p>
 			</div>
 			<Image src={photo} alt="profile matias" loading="eager" width={60} />
 			<h1
-				class="text-3xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center mt-4"
+				class="text-3xl md:text-5xl font-semibold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent flex flex-col justify-center items-center mt-4 py-2"
 			>
 				<span>Creando sistemas</span>
 				<span>para automatizar procesos</span>
 			</h1>
-			<p class="max-w-[300px] text-clGray flex flex-col">
+			<p
+				class="max-w-[300px] md:max-w-[400px] text-clGray flex flex-col md:text-xl"
+			>
 				<span>Diseñando y desarrollando aplicaciones </span>
 				<span>con el fin de optimizar tiempo y recursos </span>
 				<span>para clientes alrededor del mundo.</span>
